@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "nodeNumber",
+						"type": "uint8"
+					}
+				],
+				"name": "getNodeAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "proof",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "nodeAddress",
+						"type": "address"
+					}
+				],
+				"name": "register",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "NodeRegister",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/NodeRegister.sol": "NodeRegister"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/NodeRegister.sol": {
+			"keccak256": "0xcaa72b4e55704dda487dcd34bb022eb3c9e3666ddadaecdb8e40d67346933485",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b551e93e70b7084a96cc5f9abfbee46f53d2e49d9517c77406c785fd5fe440e8",
+				"dweb:/ipfs/Qma4MpAhGVtwX8RvjPosnv6nRPDwodY7DSS26pQTLNaGA8"
+			]
+		}
+	},
+	"version": 1
+}

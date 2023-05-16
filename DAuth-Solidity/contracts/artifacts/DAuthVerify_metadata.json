@@ -1,0 +1,128 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nodeRegisterAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "accountHash",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "requestId",
+						"type": "string"
+					}
+				],
+				"name": "StringsVerified",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_v",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_s",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "accountHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "requestId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "nodeNumber",
+						"type": "uint8"
+					}
+				],
+				"name": "verify",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DAuthVerify.sol": "DAuthVerify"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DAuthVerify.sol": {
+			"keccak256": "0xc8470dfafcc5ab2cbf5908daf582ecdf3f4dc0fb0e29c2e86d0bfdb752a30119",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a0f64bd5a78e048b0278822f3b77170f7486a47d60f7a3c70bf4c6a13016bd9f",
+				"dweb:/ipfs/QmWfKiJuYLJsH5NwJuUYxks7TnysLDHqf3joY8RxTXTgmE"
+			]
+		},
+		"contracts/NodeRegister.sol": {
+			"keccak256": "0xcaa72b4e55704dda487dcd34bb022eb3c9e3666ddadaecdb8e40d67346933485",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b551e93e70b7084a96cc5f9abfbee46f53d2e49d9517c77406c785fd5fe440e8",
+				"dweb:/ipfs/Qma4MpAhGVtwX8RvjPosnv6nRPDwodY7DSS26pQTLNaGA8"
+			]
+		}
+	},
+	"version": 1
+}
