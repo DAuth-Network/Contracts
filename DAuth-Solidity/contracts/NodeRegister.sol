@@ -8,8 +8,17 @@ pragma solidity 0.8.18;
 contract NodeRegister {
 
     address[] registeredNodes;
-    
+    address private owner;
+  
+     // Defining a constructor   
+    constructor() public {   
+        owner = msg.sender;
+    }
+
     function register(string memory proof, address nodeAddress) public returns (uint256) {
+        if (msg.sender != owner) {
+            return 999;
+        }
         if (verifyProof(proof)) {
             registeredNodes.push(nodeAddress);
             return (registeredNodes.length - 1);
