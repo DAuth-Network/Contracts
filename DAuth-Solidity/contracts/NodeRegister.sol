@@ -17,13 +17,13 @@ contract NodeRegister {
 
     function register(string memory proof, address nodeAddress) public returns (uint256) {
         if (msg.sender != owner) {
-            return 999;
+            return 99999;
         }
         if (verifyProof(proof)) {
             registeredNodes.push(nodeAddress);
             return (registeredNodes.length - 1);
         }
-        return 999;
+        return 99999;
     }
 
     function getNodeAddress (uint8 nodeNumber) public view returns (address) {
@@ -31,6 +31,10 @@ contract NodeRegister {
             return address(0);
         }
         return registeredNodes[nodeNumber];
+    }
+
+    function getNodeList () public view returns (address[] memory) {
+        return registeredNodes;
     }
 
     function verifyProof(string memory proof) private view returns (bool)
